@@ -43,11 +43,11 @@ The original dataset has 22232 rows and 91 features. The dataset is preprocessed
 ### EXPLORATORY DATA ANALYSIS
 Ames is a city in Story County, Iowa and is the home of Iowa State University (ISU). [Ref](https://en.wikipedia.org/wiki/Ames,_Iowa) It has an area of 62.86 km2. According to the 2010 US Census, the major employment in town is Education. Campustown is located south of the ISU campus.  
 
-![Map of Ames](https://github.com/ber0-0/Capstone/blob/master/image/Picture1.png) ![Avg SalePrice vs Neighboorhood](https://github.com/ber0-0/Capstone/blob/master/image/Picture2.png)
+![Map of Ames](image/Picture1.png) ![Avg SalePrice vs Neighboorhood](image/Picture2.png)
   
 Since location is a major feature in how the house price fluctuates, a boxplot of property prices and neighborhood is created. The average property prices are the highest in North Ridge and North Ridge Height, where are close to the ISU campus. Considered the major employment in town in Education, these two neighborhoods are no doubt the most popular in the local real estate market.
 
-![Correlation Heatmap](https://github.com/ber0-0/Capstone/blob/master/image/Picture3.png)
+![Correlation Heatmap](image/Picture3.png)
  
 The pool area, the number of bedrooms and garage year built are weakly correlated to the sale price. The land assessment and other assessment values are collinear to the total assessment value because the total assessment equals to the sum of these two values. The number of cars parked is collinear to the garage area. This is quite obvious since the bigger the garage, the more cars can be parked in there. As a result, the total assessment value and the garage area features are kept; other features are dropped to prevent multicollinearity.
 
@@ -55,15 +55,15 @@ The pool area, the number of bedrooms and garage year built are weakly correlate
 Since house price (sale price) is a continuous variable, regression models are being used to address this problem. The selected models for this problem are linear regression (Lasso and Ridge), KNearestNeighbor, Decision Tree, Support Vector Regressor, Extreme Gradient Boost (XGBoost) and Convolutional Neural Network (Keras). Before training the model, the dataset has been scaled and used PCA to reduce dimensionality if applicable. Each model has been fine-tuned and cross-validated using GridSearch and pipeline.
 
 If we look at the R2 value of each model, Extreme Gradient Boosting (xgb) gives out the best result on the test data with 0.83, whereas Decision Tree (dtc) gives out the worst result on the test data with 0.40.
-![Model R2](https://github.com/ber0-0/Capstone/blob/master/image/Picture4.png)
+![Model R2](image/Picture4.png)
       
 If we look at the distribution of the error between actual and predicted house prices, XGBoost again gives out the best result as XGBoost models have more errors centered around 0. Surprisingly, although the decision tree gives out the worst R2 value, it still has more errors centered around 0 comparing to the rest of the models.
-![linreg](https://github.com/ber0-0/Capstone/blob/master/image/Picture5.png)![knn](https://github.com/ber0-0/Capstone/blob/master/image/Picture6.png)![dtc](https://github.com/ber0-0/Capstone/blob/master/image/Picture7.png)
-![svr](https://github.com/ber0-0/Capstone/blob/master/image/Picture8.png)![xgb](https://github.com/ber0-0/Capstone/blob/master/image/Picture9.png)![cnn](https://github.com/ber0-0/Capstone/blob/master/image/Picture10.png)  
+![linreg](image/Picture5.png)![knn](image/Picture6.png)![dtc](image/Picture7.png)
+![svr](image/Picture8.png)![xgb](image/Picture9.png)![cnn](image/Picture10.png)  
 
 ## CONCLUSION/FINDINGS
 Based on the analysis and modeling of the data, location seems to have an important impact on house prices. Moreover, the ground level area (GLA) is also strongly correlated with the house price. Although the XGBoost model gives out a good prediction on the house price, it performs better at predicting high values.
-![prediction vs actual](https://github.com/ber0-0/Capstone/blob/master/image/Picture11.png)
+![prediction vs actual](image/Picture11.png)
  
 ## SUMMARY
 
