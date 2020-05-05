@@ -6,7 +6,7 @@ This capstone project aims to share real estate market insights and build a pred
 - Ames_2016-2019 (jupyter notebook): Initial preprocessing on the raw dataset: separated the dataset into sale data and assessment data.
 - Final_Presentation (tableau): Exploratory data analysis on the real estate market.
 - Transaction (jupyter notebook): Data cleansing, EDA and modeling (including CNN). Please run this file under deeplearning environment.
-- Models (various pickled file for models):
+- Models (Pickled_Files folder):
     - linreg.pkl: pickled file for linear regression
     - knn.pkl: pickled file for KNearestNeighbor
     - dtc.pkl: pickled file for Decision Tree
@@ -47,7 +47,7 @@ Since location is a major feature in how the house price fluctuates, a boxplot o
  
 The pool area, the number of bedrooms and garage year built are weakly correlated to the sale price. The land assessment and other assessment values are collinear to the total assessment value because the total assessment equals to the sum of these two values. The number of cars parked is collinear to the garage area. This is quite obvious since the bigger the garage, the more cars can be parked in there. As a result, the total assessment value and the garage area features are kept; other features are dropped to prevent multicollinearity.
 
-## Models
+## MODELS
 Since house price (sale price) is a continuous variable, regression models are being used to address this problem. The selected models for this problem are linear regression (Lasso and Ridge), KNearestNeighbor, Decision Tree, Support Vector Regressor, Extreme Gradient Boost (XGBoost) and Convolutional Neural Network (Keras). Before training the model, the dataset has been scaled and used PCA to reduce dimensionality if applicable. Each model has been fine-tuned and cross-validated using GridSearch and pipeline. 
 If we look at the R2 value of each model, Extreme Gradient Boosting (xgb) gives out the best result on the test data with 0.83, whereas Decision Tree (dtc) gives out the worst result on the test data with 0.40. 
 
