@@ -1,4 +1,4 @@
-# Project：House Price Prediction
+# Project：House Sale Price Prediction
 
 This capstone project aims to share real estate market insights and build a predictive model for house price/sale price.
 
