@@ -41,7 +41,7 @@ The original dataset has 22232 rows and 91 features. The dataset is preprocessed
     -	Properties with negative building age are suspected to be pre-sale properties, therefore these data are dropped from the dataset.
 
 ### EXPLORATORY DATA ANALYSIS
-Ames is a city in Story County, Iowa and is the home of Iowa State University (ISU). [(REF)](https://en.wikipedia.org/wiki/Ames,_Iowa) It has an area of 62.86 km2. According to the 2010 US Census, the major employment in town is Education. Campustown is located south of the ISU campus.  
+Ames is a city in Story County, Iowa and is the home of Iowa State University (ISU).[[REF]](https://en.wikipedia.org/wiki/Ames,_Iowa) It has an area of 62.86 km2. According to the 2010 US Census, the major employment in town is Education. Campustown is located south of the ISU campus.  
 
 <p align="middle">
   <img src="image/Picture1.png" alt="Ames Map" />
@@ -61,7 +61,6 @@ The pool area, the number of bedrooms and garage year built are weakly correlate
 
 ## MODELS
 Since house price (sale price) is a continuous variable, regression models are being used to address this problem. The selected models for this problem are linear regression (Lasso and Ridge), KNearestNeighbor, Decision Tree, Support Vector Regressor, Extreme Gradient Boost (XGBoost) and Convolutional Neural Network (Keras). Before training the model, the dataset has been scaled and used PCA to reduce dimensionality if applicable. Each model has been fine-tuned and cross-validated using GridSearch and pipeline. 
-If we look at the R2 value of each model, Extreme Gradient Boosting (xgb) gives out the best result on the test data with 0.83, whereas Decision Tree (dtc) gives out the worst result on the test data with 0.40. 
 
 If we look at the R2 value of each model, Extreme Gradient Boosting (xgb) gives out the best result on the test data with 0.83, whereas Decision Tree (dtc) gives out the worst result on the test data with 0.40.
 
@@ -76,6 +75,7 @@ If we look at the distribution of the error between actual and predicted house p
 
 ## CONCLUSION/FINDINGS
 Based on the analysis and modeling of the data, location seems to have an important impact on house prices. Moreover, the ground level area (GLA) is also strongly correlated with the house price. Although the XGBoost model gives out a good prediction on the house price, it performs better at predicting high values.
+
 ![prediction vs actual](image/Picture11.png)
  
 ## SUMMARY
@@ -85,4 +85,4 @@ The ultimate goal for this project is to develop a model that can predict the pr
 
 
 
-For any questions or suggestions, please feel free to contact me by [LinkedIn](www.linkedin.com/in/berniceliang725)!
+*For any questions or suggestions, please feel free to contact me by [LinkedIn](www.linkedin.com/in/berniceliang725)!*
