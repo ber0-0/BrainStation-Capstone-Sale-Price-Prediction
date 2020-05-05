@@ -44,7 +44,7 @@ The original dataset has 22232 rows and 91 features. The dataset is preprocessed
 Ames is a city in Story County, Iowa and is the home of Iowa State University (ISU). [(REF)](https://en.wikipedia.org/wiki/Ames,_Iowa) It has an area of 62.86 km2. According to the 2010 US Census, the major employment in town is Education. Campustown is located south of the ISU campus.  
 
 <p float="left">
-  <img src="image/Picture1.png" alt="Ames Map" width="425" />
+  <img src="image/Picture1.png" alt="Ames Map" width="400" />
   <img src="image/Picture2.png" alt="Avg SalePrice vs Neighboorhood" width="450" /> 
 </p>
 
