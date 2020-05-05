@@ -83,3 +83,6 @@ Based on the analysis and modeling of the data, location seems to have an import
 In order to improve the power of this model, more feature information shall be collected, and more data points are needed to train this model. 
 The ultimate goal for this project is to develop a model that can predict the precise sale price of a property based on its features. If the model is capable of predicting a precise sale price of a property, then the realtors or the selling parties can use this model to evaluate the listed price range. Also, an individual can use this model to estimate property-related levies or taxes. Finally, we can launch an application or a webpage to assist individuals to evaluate his/her affordability based on different features, such as location, property type and more.
 
+
+
+For any questions or suggestions, please feel free to contact me by [LinkedIn](www.linkedin.com/in/berniceliang725)!
