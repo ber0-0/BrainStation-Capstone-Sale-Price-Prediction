@@ -43,10 +43,11 @@ The original dataset has 22232 rows and 91 features. The dataset is preprocessed
 ### EXPLORATORY DATA ANALYSIS
 Ames is a city in Story County, Iowa and is the home of Iowa State University (ISU). [(REF)](https://en.wikipedia.org/wiki/Ames,_Iowa) It has an area of 62.86 km2. According to the 2010 US Census, the major employment in town is Education. Campustown is located south of the ISU campus.  
 
+
 <img align="left" src="image/Picture1.png" alt="Ames Map" hspace="20"/>
 <img align="left" src="image/Picture2.png" alt="Avg SalePrice vs Neighboorhood"  hspace="20"/>
 <br/>
-  
+
 Since location is a major feature in how the house price fluctuates, a boxplot of property prices and neighborhood is created. The average property prices are the highest in North Ridge and North Ridge Height, where are close to the ISU campus. Considered the major employment in town in Education, these two neighborhoods are no doubt the most popular in the local real estate market.
 
 ![Correlation Heatmap](image/Picture3.png)
