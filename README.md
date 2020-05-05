@@ -45,13 +45,13 @@ Ames is a city in Story County, Iowa and is the home of Iowa State University (I
 
 <p float="left">
   <img src="image/Picture1.png" alt="Ames Map" width="425" />
-  <img src="image/Picture2.png" alt="Avg SalePrice vs Neighboorhood" width="525" /> 
+  <img src="image/Picture2.png" alt="Avg SalePrice vs Neighboorhood" width="500" /> 
 </p>
 
 Since location is a major feature in how the house price fluctuates, a boxplot of property prices and neighborhood is created. The average property prices are the highest in North Ridge and North Ridge Height, where are close to the ISU campus. Considered the major employment in town in Education, these two neighborhoods are no doubt the most popular in the local real estate market.
 
 <p align="middle">
-<img src="image/Picture3.png" alt="Correlation Heatmap" />
+  <img src="image/Picture3.png" alt="Correlation Heatmap" />
 </p>
  
 The pool area, the number of bedrooms and garage year built are weakly correlated to the sale price. The land assessment and other assessment values are collinear to the total assessment value because the total assessment equals to the sum of these two values. The number of cars parked is collinear to the garage area. This is quite obvious since the bigger the garage, the more cars can be parked in there. As a result, the total assessment value and the garage area features are kept; other features are dropped to prevent multicollinearity.
@@ -62,7 +62,9 @@ If we look at the R2 value of each model, Extreme Gradient Boosting (xgb) gives 
 
 If we look at the R2 value of each model, Extreme Gradient Boosting (xgb) gives out the best result on the test data with 0.83, whereas Decision Tree (dtc) gives out the worst result on the test data with 0.40.
 
-![Model R2](image/Picture4.png)
+<p align="middle">
+  <img src="image/Picture4.png" alt="Model R2" />
+</p>
       
 If we look at the distribution of the error between actual and predicted house prices, XGBoost again gives out the best result as XGBoost models have more errors centered around 0. Surprisingly, although the decision tree gives out the worst R2 value, it still has more errors centered around 0 comparing to the rest of the models.
 
